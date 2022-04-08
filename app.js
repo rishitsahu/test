@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
-router.get('/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.status(200).send('Ok');
 });
 
