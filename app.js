@@ -6,8 +6,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
-app.get('/health', (req, res) => {
-  res.send('Hello World!')
+router.get('/health', (req, res) => {
+  res.status(200).send('Ok');
 });
 
 app.listen(port, () => {
